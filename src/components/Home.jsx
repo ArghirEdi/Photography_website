@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import PhotoCard from "./PhotoCard";
-import ToggleButton from "./ToggleButton";
 import { FaInstagram } from "react-icons/fa";
 import FlickrIcon from "./FlickrIcon";
 import ScrollToTopButton from "./ScrollToTopButton";
@@ -22,21 +21,8 @@ const photos = [
 ];
 
 function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDarkMode]);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
 
   const openModal = (index) => {
     setCurrentPhotoIndex(index);
@@ -63,9 +49,7 @@ function Home() {
         Recent Work
       </h1>
       <div className="flex justify-between">
-        <div className="fixed left-0 top-1/2 transform -translate-y-1/2">
-          <ToggleButton isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-        </div>
+        <div className="fixed left-0 top-1/2 transform -translate-y-1/2"></div>
         <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 py-6 px-16 gap-4">
           {photos.map((photo, index) => (
             <PhotoCard
@@ -78,14 +62,14 @@ function Home() {
 
         <div className="fixed right-0 top-1/2 transform -translate-y-1/2 pr-4 flex flex-col items-center space-y-4">
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/arghir_raul/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaInstagram className="text-4xl text-red-500 hover:text-red-600" />
           </a>
           <a
-            href="https://www.flickr.com"
+            href="https://www.flickr.com/photos/198618895@N07/"
             target="_blank"
             rel="noopener noreferrer"
           >
