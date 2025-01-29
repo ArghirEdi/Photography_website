@@ -1,20 +1,5 @@
-// import PropTypes from "prop-types";
-
-// function PhotoCard({ path }) {
-//   return (
-//     <div className="overflow-hidden rounded-3xl shadow-lg w-full relative break-inside-avoid">
-//       <img src={path} alt="Photo" className="object-cover w-full h-full" />
-//     </div>
-//   );
-// }
-
-// PhotoCard.propTypes = {
-//   path: PropTypes.string.isRequired,
-// };
-
-// export default PhotoCard;
-
 import PropTypes from "prop-types";
+import "../styles/custom-slick.css";
 
 function PhotoCard({ path, onClick }) {
   return (
@@ -22,7 +7,7 @@ function PhotoCard({ path, onClick }) {
       <img
         src={path}
         alt="Photo"
-        className="object-cover w-full h-full rounded-xl"
+        className="object-cover w-full h-full rounded-xl photo-card"
       />
     </div>
   );

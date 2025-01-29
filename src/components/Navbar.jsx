@@ -8,9 +8,11 @@ function Navbar({ isDarkMode, toggleTheme }) {
     <nav className="bg-slate-200 dark:bg-zinc-950 shadow-xl mb-5 border-b border-gray-300 dark:border-gray-700">
       <div className="container ml-6 pr-6 flex items-center">
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-24 mr-4" />
+          <Link to="/">
+            <img src={logo} alt="Logo" className="h-24 mr-4" />
+          </Link>
         </div>
-        <div className="flex-1 flex justify-center ml-8">
+        <div className="flex-1 flex justify-center md:ml-8">
           <ul className="flex space-x-6 text-black dark:text-white text-lg">
             <li>
               <Link

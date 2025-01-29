@@ -6,7 +6,7 @@ import Gallery from "./components/Gallery";
 import About from "./components/About";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);

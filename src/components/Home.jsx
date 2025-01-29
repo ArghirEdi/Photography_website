@@ -4,6 +4,8 @@ import { FaInstagram } from "react-icons/fa";
 import FlickrIcon from "./FlickrIcon";
 import ScrollToTopButton from "./ScrollToTopButton";
 import PhotoModal from "./PhotoModal";
+import "../styles/custom-slick.css";
+import Footer from "./Footer";
 
 const photos = [
   { index: 1, path: "src\\assets\\1.jpeg" },
@@ -60,7 +62,7 @@ function Home() {
           ))}
         </div>
 
-        <div className="fixed right-0 top-1/2 transform -translate-y-1/2 pr-4 flex flex-col items-center space-y-4">
+        <div className="fixed right-0 top-1/2 transform -translate-y-1/2 pr-7 flex flex-col items-center space-y-4">
           <a
             href="https://www.instagram.com/arghir_raul/"
             target="_blank"
@@ -77,6 +79,7 @@ function Home() {
           </a>
         </div>
       </div>
+      <Footer />
       <ScrollToTopButton />
       <PhotoModal
         isOpen={isModalOpen}

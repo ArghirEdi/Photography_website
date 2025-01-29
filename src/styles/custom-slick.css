@@ -1,0 +1,43 @@
+/* Default dot styles for light mode */
+.slick-dots li button:before {
+  color: blue !important; /* Default color for light mode */
+}
+
+/* Selected dot styles for light mode */
+.slick-dots li.slick-active button:before {
+  color: red !important; /* Color for selected dot in light mode */
+}
+
+/* Dot styles for dark mode */
+.dark .slick-dots li button:before {
+  color: white !important; /* Color for dark mode */
+}
+
+/* Selected dot styles for dark mode */
+.dark .slick-dots li.slick-active button:before {
+  color: yellow !important; /* Color for selected dot in dark mode */
+}
+
+.slick-dots {
+  bottom: -40px !important; /* Adjust this value to move the dots lower */
+}
+
+.photo-card {
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.photo-card:hover {
+  transform: scale(1.05) !important;
+}
+
+@media (max-width: 768px) {
+  .custom-arrow {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    display: none !important;
+  }
+}

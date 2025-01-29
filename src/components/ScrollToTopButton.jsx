@@ -6,7 +6,7 @@ function ScrollToTopButton() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
+      if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -26,11 +26,11 @@ function ScrollToTopButton() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed bottom-5 right-5">
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="p-2 bg-black text-white opacity-60 hover:opacity-100 dark:bg-white dark:text-black dark:opacity-60 dark:hover:opacity-100 rounded-full shadow-md transition duration-300"
+          className=" scroll-to-top p-2 bg-black text-white opacity-60 hover:opacity-100 dark:bg-white dark:text-black dark:opacity-60 dark:hover:opacity-100 rounded-full shadow-md transition duration-300"
         >
           <FaArrowUp className="text-2xl" />
         </button>
