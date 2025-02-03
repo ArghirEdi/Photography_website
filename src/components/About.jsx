@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Footer from "./Footer";
 import emailjs from "emailjs-com";
+import raulPhoto1 from "../assets/raul-1.jpeg";
+import raulPhoto2 from "../assets/raul-2.jpeg";
+import raulPhoto3 from "../assets/raul-3.jpeg";
 
 function About() {
   const [formData, setFormData] = useState({
@@ -21,7 +24,12 @@ function About() {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(
+        "service_6zcc0yb",
+        "template_b44hwbc",
+        e.target,
+        "IPBUQq849PR7gnJ6v"
+      )
       .then(
         () => {
           alert("Message sent successfully!");
@@ -135,17 +143,17 @@ function About() {
         <div className="lg:w-1/2 p-4 ">
           <div className="grid grid-cols-2 py-6 gap-4">
             <img
-              src="src\assets\raul-1.jpeg"
+              src={raulPhoto1}
               alt="Photo of Me"
               className="rounded-lg shadow-lg w-full"
             />
             <img
-              src="src\assets\raul-2.jpeg"
+              src={raulPhoto2}
               alt="Photo of Me"
               className="rounded-lg shadow-lg w-full"
             />
             <img
-              src="src\assets\raul-3.jpeg"
+              src={raulPhoto3}
               alt="Photo of Me"
               className="rounded-lg shadow-lg w-full"
             />

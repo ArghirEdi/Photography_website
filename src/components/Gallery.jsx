@@ -6,25 +6,36 @@ import { NextArrow, PrevArrow } from "./CustomArrows";
 import ScrollToTopButton from "./ScrollToTopButton";
 import Footer from "./Footer";
 
+import naturePhoto1 from "../assets/gallery-nature-1.jpeg";
+import naturePhoto2 from "../assets/gallery-nature-2.jpeg";
+import naturePhoto3 from "../assets/gallery-nature-3.jpeg";
+import portraitPhoto1 from "../assets/gallery-portrait-1.jpeg";
+import portraitPhoto2 from "../assets/gallery-portrait-2.jpeg";
+import portraitPhoto3 from "../assets/gallery-portrait-3.jpeg";
+import portraitPhoto4 from "../assets/gallery-portrait-4.jpeg";
+import carPhoto1 from "../assets/gallery-car-1.jpeg";
+import carPhoto2 from "../assets/gallery-car-2.jpeg";
+import carPhoto3 from "../assets/gallery-car-3.jpeg";
+
 const naturePhotos = [
-  "src/assets/gallery-nature-1.jpeg",
-  "src/assets/gallery-nature-2.jpeg",
-  "src/assets/gallery-nature-3.jpeg",
+  naturePhoto1,
+  naturePhoto2,
+  naturePhoto3,
   // Add more nature photos here
 ];
 
 const portraitPhotos = [
-  "src/assets/gallery-portrait-1.jpeg",
-  "src/assets/gallery-portrait-2.jpeg",
-  "src/assets/gallery-portrait-3.jpeg",
-  "src/assets/gallery-portrait-4.jpeg",
+  portraitPhoto1,
+  portraitPhoto2,
+  portraitPhoto3,
+  portraitPhoto4,
   // Add more portrait photos here
 ];
 
 const carPhotos = [
-  "src/assets/gallery-car-1.jpeg",
-  "src/assets/gallery-car-2.jpeg",
-  "src/assets/gallery-car-3.jpeg",
+  carPhoto1,
+  carPhoto2,
+  carPhoto3,
   // Add more car photos here
 ];
 

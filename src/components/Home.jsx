@@ -7,19 +7,32 @@ import PhotoModal from "./PhotoModal";
 import "../styles/custom-slick.css";
 import Footer from "./Footer";
 
+import photo1 from "../assets/1.jpeg";
+import photo2 from "../assets/2.jpeg";
+import photo3 from "../assets/3.jpeg";
+import photo4 from "../assets/4.jpeg";
+import photo5 from "../assets/5.jpeg";
+import photo6 from "../assets/6.jpeg";
+import photo7 from "../assets/7.jpeg";
+import photo8 from "../assets/8.jpeg";
+import photo9 from "../assets/9.jpeg";
+import photo10 from "../assets/10.jpeg";
+import photo11 from "../assets/11.jpeg";
+import photo12 from "../assets/12.jpeg";
+
 const photos = [
-  { index: 1, path: "src\\assets\\1.jpeg" },
-  { index: 3, path: "src\\assets\\3.jpeg" },
-  { index: 5, path: "src\\assets\\/5.jpeg" },
-  { index: 2, path: "src\\assets\\2.jpeg" },
-  { index: 4, path: "src\\assets\\4.jpeg" },
-  { index: 6, path: "src\\assets\\6.jpeg" },
-  { index: 7, path: "src\\assets\\7.jpeg" },
-  { index: 11, path: "src\\assets\\11.jpeg" },
-  { index: 9, path: "src\\assets\\9.jpeg" },
-  { index: 10, path: "src\\assets\\10.jpeg" },
-  { index: 8, path: "src\\assets\\8.jpeg" },
-  { index: 12, path: "src\\assets\\12.jpeg" },
+  { index: 1, path: photo1 },
+  { index: 3, path: photo3 },
+  { index: 5, path: photo5 },
+  { index: 2, path: photo2 },
+  { index: 4, path: photo4 },
+  { index: 6, path: photo6 },
+  { index: 7, path: photo7 },
+  { index: 11, path: photo11 },
+  { index: 9, path: photo9 },
+  { index: 10, path: photo10 },
+  { index: 8, path: photo8 },
+  { index: 12, path: photo12 },
 ];
 
 function Home() {
@@ -93,5 +106,3 @@ function Home() {
 }
 
 export default Home;
-
-// gap-6 mx-auto w-full pl-20 pr-20
