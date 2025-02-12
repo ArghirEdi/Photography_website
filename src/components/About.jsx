@@ -68,13 +68,16 @@ function About() {
             tell a compelling story, and I strive to bring that narrative to
             life through my work.
           </p>
-          <p className="mb-12">
+          <p className="mb-6">
             I am constantly learning and evolving in my craft, always seeking
             new techniques and technologies to enhance my work. Whether I am
             behind the camera or in front of a computer screen, my goal is to
             create stunning visuals that leave a lasting impression. Thank you
             for visiting my website, and I look forward to connecting with you!
           </p>
+          <p className="mb-1 underline font-bold">Contact info:</p>
+          <p>Phone: +40 729 841 760</p>
+          <p className="mb-12">Email: raul2006arghir@gmail.com</p>
           <form
             onSubmit={handleSubmit}
             className="bg-gray-700 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
