@@ -39,9 +39,9 @@ function PhotoModal({ isOpen, photo, onClose, onNext, onPrev }) {
       className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
       onClick={handleClickOutside}
     >
-      <div className="relative bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg max-w-3xl w-full h-full">
+      <div className="relative bg-white dark:bg-zinc-900 p-4 rounded-lg shadow-lg max-w-3xl w-full h-full">
         <button
-          className="absolute top-2 right-2 text-white dark:text-black"
+          className="absolute top-2 right-2 text-black dark:text-white"
           onClick={onClose}
         >
           <FaTimes className="text-2xl" />
@@ -50,13 +50,13 @@ function PhotoModal({ isOpen, photo, onClose, onNext, onPrev }) {
           <img src={photo.path} alt="Photo" className="max-h-full max-w-full" />
         </div>
         <button
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white dark:text-black"
+          className="absolute left-[-4.5%] p-2 rounded-md top-1/2 transform -translate-y-1/2 text-black dark:text-white bg-white dark:bg-zinc-900"
           onClick={onPrev}
         >
           <FaArrowLeft className="text-2xl" />
         </button>
         <button
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white dark:text-black"
+          className="absolute right-[-4.5%] p-2 rounded-md top-1/2 transform -translate-y-1/2 text-black dark:text-white bg-white dark:bg-zinc-900"
           onClick={onNext}
         >
           <FaArrowRight className="text-2xl" />
