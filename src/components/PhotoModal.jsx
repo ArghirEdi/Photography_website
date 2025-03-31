@@ -50,13 +50,13 @@ function PhotoModal({ isOpen, photo, onClose, onNext, onPrev }) {
           <img src={photo.path} alt="Photo" className="max-h-full max-w-full" />
         </div>
         <button
-          className="absolute left-[-4.5%] p-2 rounded-md top-1/2 transform -translate-y-1/2 text-black dark:text-white bg-white dark:bg-zinc-900"
+          className="absolute left-2 md:left-[-4.5%] md:p-2 md:rounded-md top-1/2 transform -translate-y-1/2 text-black dark:text-white md:bg-white md:dark:bg-zinc-900"
           onClick={onPrev}
         >
           <FaArrowLeft className="text-2xl" />
         </button>
         <button
-          className="absolute right-[-4.5%] p-2 rounded-md top-1/2 transform -translate-y-1/2 text-black dark:text-white bg-white dark:bg-zinc-900"
+          className="absolute right-2 md:right-[-4.5%] md:p-2 md:rounded-md top-1/2 transform -translate-y-1/2 text-black dark:text-white md:bg-white md:dark:bg-zinc-900"
           onClick={onNext}
         >
           <FaArrowRight className="text-2xl" />
