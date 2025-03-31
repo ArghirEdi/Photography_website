@@ -2,10 +2,6 @@ import { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import LoadingSpinner from "./components/LoadingSpinner";
-// import Home from "./components/Home";
-// import Gallery from "./components/Gallery";
-// import About from "./components/About";
-// import PageNotFound from "./components/PageNotFound";
 
 const Home = lazy(() => import("./components/Home"));
 const Gallery = lazy(() => import("./components/Gallery"));
