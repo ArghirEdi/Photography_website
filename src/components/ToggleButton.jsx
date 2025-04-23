@@ -4,7 +4,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 function ToggleButton({ isDarkMode, toggleTheme }) {
   return (
     <div
-      className="relative w-20 h-8 flex items-center bg-gray-300 dark:bg-gray-700 rounded-full p-1 cursor-pointer"
+      className="relative w-20 h-8 flex items-center bg-gray-300 dark:bg-gray-700 rounded-full p-1 md:mr-5 cursor-pointer"
       onClick={toggleTheme}
     >
       <div

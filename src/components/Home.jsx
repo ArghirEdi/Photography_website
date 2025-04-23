@@ -75,7 +75,7 @@ function Home() {
           ))}
         </div>
 
-        <div className="fixed right-0 top-1/2 transform -translate-y-1/2 pr-7 flex flex-col items-center space-y-4">
+        <div className="fixed right-0 top-1/2 transform -translate-y-1/2 lg:pr-7 md:pr-5 pr-3 flex flex-col items-center space-y-4">
           <a
             href="https://www.instagram.com/arghir_raul/"
             target="_blank"
